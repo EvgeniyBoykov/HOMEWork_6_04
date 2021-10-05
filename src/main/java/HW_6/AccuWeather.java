@@ -50,7 +50,6 @@ public class AccuWeather<pass> implements Weather {
 
                 System.out.println(weatherResponse);
                 break;
-
             case FIVE_DAYS:
                 HttpUrl httpUrl = new HttpUrl.Builder()
                         .scheme(PROTOCOL)
@@ -71,7 +70,6 @@ public class AccuWeather<pass> implements Weather {
                 break;
         }
     }
-
     public static void main(String[] args) {
         try{
             (new AccuWeather()).getWeather("Moscow", Period.NOW);
