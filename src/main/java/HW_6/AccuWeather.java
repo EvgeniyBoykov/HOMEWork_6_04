@@ -62,7 +62,6 @@ public class AccuWeather<pass> implements Weather {
                         .addPathSegment ("349727")//detectCityKey(city))
                         .addQueryParameter(API_KEY_QUERY_PROPERTY, API_KEY)
                         .build();
-
                 Request request = new Request.Builder()
                         .url(httpUrl)
                         .build();
